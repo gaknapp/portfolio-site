@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gavin | Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Gavin</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="writing.html">Writing</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <section class="hero">
+        <p class="kicker">Reach out</p>
+        <h1 class="hero-title">Contact</h1>
+        <p class="hero-subtitle">
+          Best way to reach me is email. You can also find my work on GitHub and LinkedIn.
+        </p>
+      </section>
+
+      <section class="grid-3">
+        <article class="card">
+          <h2 class="card-title">Email</h2>
+          <p class="card-text">your.email@example.com</p>
+        </article>
+
+        <article class="card">
+          <h2 class="card-title">GitHub</h2>
+          <p class="card-text">
+            <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourusername</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h2 class="card-title">LinkedIn</h2>
+          <p class="card-text">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title">Optional message form</h2>
+        <p class="card-text">
+          This can be connected to a form service later. For now, it serves as a layout placeholder.
+        </p>
+
+        <form>
+          <p class="card-text">
+            <label for="name"><strong>Name</strong></label><br />
+            <input id="name" name="name" type="text" style="width: 100%; padding: 10px; border: 1px solid #d7dde6; border-radius: 10px;" />
+          </p>
+
+          <p class="card-text">
+            <label for="msg"><strong>Message</strong></label><br />
+            <textarea id="msg" name="msg" rows="5" style="width: 100%; padding: 10px; border: 1px solid #d7dde6; border-radius: 10px;"></textarea>
+          </p>
+
+          <p>
+            <button class="btn primary" type="submit">Send</button>
+          </p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-left">© <span id="year"></span> Gavin</p>
+      <p class="footer-right">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <span class="sep">•</span>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
