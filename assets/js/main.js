@@ -1,9 +1,8 @@
-// Set footer year
 const yearEl = document.getElementById("year");
-if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+if (yearEl) {
+  yearEl.textContent = String(new Date().getFullYear());
+}
 
-// Lightweight hover tooltip for highlighted terms
-// Uses the element's data-tip attribute.
 let tipEl = null;
 
 function showTip(target) {
@@ -42,8 +41,10 @@ function hideTip() {
 }
 
 document.addEventListener("mouseover", (e) => {
-  const t = e.target;
-  if (t instanceof HTMLElement && t.classList.contains("term")) showTip(t);
+  const target = e.target;
+  if (target instanceof HTMLElement && target.classList.contains("term")) {
+    showTip(target);
+  }
 });
 
 document.addEventListener("mousemove", (e) => {
@@ -51,6 +52,8 @@ document.addEventListener("mousemove", (e) => {
 });
 
 document.addEventListener("mouseout", (e) => {
-  const t = e.target;
-  if (t instanceof HTMLElement && t.classList.contains("term")) hideTip();
+  const target = e.target;
+  if (target instanceof HTMLElement && target.classList.contains("term")) {
+    hideTip();
+  }
 });
