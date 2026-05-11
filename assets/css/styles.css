@@ -27,7 +27,9 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(30, 58, 138, 0.05), transparent 35%),
+    linear-gradient(180deg, #f8faff 0%, #f4f7fb 45%, #ffffff 100%);
   line-height: 1.6;
   font-size: 18px;
 }
@@ -101,6 +103,31 @@ a:hover {
   margin-bottom: 22px;
 }
 
+.hero-home {
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(135deg, rgba(10, 16, 30, 0.86), rgba(30, 58, 138, 0.70)),
+    url("../img/server-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 66ch;
+}
+
 .kicker {
   margin: 0 0 8px;
   font-weight: 700;
@@ -110,16 +137,29 @@ a:hover {
   font-size: 0.85rem;
 }
 
+.hero-home .kicker {
+  color: #7dd3fc;
+}
+
 .hero-title {
   margin: 0 0 10px;
-  font-size: 2.2rem;
-  line-height: 1.15;
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
+  line-height: 1.08;
+}
+
+.hero-home .hero-title,
+.hero-home .hero-subtitle {
+  color: #ffffff;
 }
 
 .hero-subtitle {
   margin: 0 0 18px;
   color: var(--muted);
   max-width: 70ch;
+}
+
+.hero-home .hero-subtitle {
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .hero-actions {
@@ -152,10 +192,44 @@ a:hover {
   color: var(--text);
 }
 
+.hero-home .btn.ghost {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-home .btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+}
+
 .btn.ghost:hover {
   background: rgba(22, 163, 74, 0.08);
   border-color: rgba(22, 163, 74, 0.35);
   text-decoration: none;
+}
+
+.hero-photo {
+  margin: 0;
+  justify-self: end;
+  text-align: center;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 22px;
+  border: 4px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  background: #ffffff;
+}
+
+.hero-photo figcaption {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .grid-3 {
@@ -246,6 +320,19 @@ a:hover {
 @media (max-width: 900px) {
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .hero-photo img {
+    max-width: 260px;
   }
 
   .hero-title {
