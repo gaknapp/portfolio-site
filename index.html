@@ -10,7 +10,10 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Gavin Knapp</a>
+      <a class="brand" href="index.html">
+        <span class="brand-first">GAVIN</span>
+        <span class="brand-second">KNAPP</span>
+      </a>
 
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="projects.html">Projects</a>
@@ -49,7 +52,7 @@
 
       <section class="grid-3">
         <article class="card">
-          <h2 class="card-title">What I’m building</h2>
+          <h2 class="card-title">My Projects</h2>
           <p class="card-text">
             Labs, websites, and technical projects that show how I approach security, structure, and problem solving.
           </p>
@@ -57,7 +60,7 @@
         </article>
 
         <article class="card">
-          <h2 class="card-title">What I can work with</h2>
+          <h2 class="card-title">My Skills</h2>
           <p class="card-text">
             Programming, networking, security concepts, and the tools I use to learn and build.
           </p>
@@ -65,7 +68,7 @@
         </article>
 
         <article class="card">
-          <h2 class="card-title">Notes and explanations</h2>
+          <h2 class="card-title">My Writing</h2>
           <p class="card-text">
             Short writeups that show how I think through systems, security topics, and technical tradeoffs.
           </p>
@@ -74,13 +77,12 @@
       </section>
 
       <section class="card about">
-        <h2 class="card-title">What I focus on</h2>
+        <h2 class="card-title">Why Cybersecurity</h2>
         <p class="card-text">
-          I spend the most time on <span class="term" data-tip="Routing is how traffic moves between networks and paths.">routing</span>,
-          DNS, and the parts of infrastructure that decide whether a system is reliable, secure, or just confusing.
-        </p>
-        <p class="card-text">
-          I want this site to grow with my work, not sit here as a static placeholder.
+          I like cybersecurity because it combines logic, pressure, and problem solving. Defending a system means
+          understanding where it can fail, how people actually use it, and what needs to happen to keep it reliable.
+          I’m interested in the technical side of the field, but also in the reasoning behind it: routing paths,
+          access control, configuration choices, weak points, and the decisions that make a system stronger or weaker.
         </p>
       </section>
     </div>
@@ -88,12 +90,18 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-left">© <span id="year"></span> Gavin Knapp</p>
-      <p class="footer-right">
+      <div class="footer-left">
+        <img class="footer-logo" src="assets/img/logo.png" alt="Gavin Knapp logo">
+        <p class="footer-copy">© <span id="year"></span> Gavin Knapp</p>
+      </div>
+
+      <div class="footer-right">
         <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
         <span class="sep">•</span>
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+        <span class="sep">•</span>
+        <a href="https://joinhandshake.com/" target="_blank" rel="noopener">Handshake</a>
+      </div>
     </div>
   </footer>
 

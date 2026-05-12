@@ -61,14 +61,28 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 18px;
   padding: 14px 0;
-  gap: 16px;
 }
 
 .brand {
-  font-weight: 800;
-  letter-spacing: 0.2px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.brand-first {
+  color: var(--blue);
+}
+
+.brand-second {
+  color: var(--green);
 }
 
 .site-nav {
@@ -294,13 +308,34 @@ a:hover {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.footer-left,
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-copy,
 .footer-right {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-right a {
